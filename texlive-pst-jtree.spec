@@ -50,6 +50,7 @@ for, the jftree package, which is no longer available.
 %doc %{_texmfdistdir}/doc/generic/pst-jtree/pst-jtree-doc-add.pdf
 %doc %{_texmfdistdir}/doc/generic/pst-jtree/pst-jtree-doc.pdf
 %doc %{_texmfdistdir}/doc/generic/pst-jtree/pst-jtree-examples.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -60,3 +61,5 @@ for, the jftree package, which is no longer available.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
