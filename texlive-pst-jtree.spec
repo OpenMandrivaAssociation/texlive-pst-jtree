@@ -6,7 +6,7 @@
 # catalog-version 2.6
 Name:		texlive-pst-jtree
 Version:	2.6
-Release:	9
+Release:	10
 Summary:	Typeset complex trees for linguists
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-jtree
