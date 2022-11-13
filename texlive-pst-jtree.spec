@@ -1,18 +1,12 @@
-# revision 20946
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/pst-jtree
-# catalog-date 2011-01-05 08:46:38 +0100
-# catalog-license lppl1.3
-# catalog-version 2.6
 Name:		texlive-pst-jtree
-Version:	2.6
-Release:	11
+Version:	20946
+Release:	1
 Summary:	Typeset complex trees for linguists
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-jtree
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-jtree.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-jtree.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-jtree.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-jtree.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -25,12 +19,12 @@ xkeyval packages. jTree is a development of, and replacement
 for, the jftree package, which is no longer available.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -44,24 +38,10 @@ for, the jftree package, which is no longer available.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.6-2
-+ Revision: 755317
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.6-1
-+ Revision: 719361
-- texlive-pst-jtree
-- texlive-pst-jtree
-- texlive-pst-jtree
-- texlive-pst-jtree
-
