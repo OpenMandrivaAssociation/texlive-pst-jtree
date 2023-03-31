@@ -1,6 +1,6 @@
 Name:		texlive-pst-jtree
 Version:	20946
-Release:	1
+Release:	2
 Summary:	Typeset complex trees for linguists
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-jtree
