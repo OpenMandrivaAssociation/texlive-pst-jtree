@@ -3,7 +3,7 @@ Version:	20946
 Release:	2
 Summary:	Typeset complex trees for linguists
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-jtree
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-jtree
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-jtree.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-jtree.doc.r%{version}.tar.xz
